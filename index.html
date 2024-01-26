@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Bakery Webpage</title>
+    <link href="dist/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- header -->
+    <div class="menu">
+      <main>
+        <h1><i>Le Bakery</i></h1>
+        <p class="established">Est. 2023</p>
+        <hr>
+
+        <!-- drinks section -->
+        <section>
+          <h2>Drinks</h2>
+          <img src="img/thai.jpg" alt="Thai Tea Image"/>
+          <article class="item">
+            <p class="flavor">Thai Tea</p><p class="price">5.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Matcha Tea Latte with Cold Foam</p><p class="price">5.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice Chai Latte with Cold Foam</p><p class="price">5.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">White Chocolate Mocha</p><p class="price">4.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hot Chocolate</p><p class="price">4.00</p>
+          </article>
+        </section>
+
+        <!-- pastries section -->
+        <section>
+          <h2>Pastries</h2>
+          <img src="img/ubecookies.jpg" alt="Ube Crinkle Cookies Image"/>
+          <article class="item">
+            <p class="dessert">Ube Crinkle Cookie</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Banana Bread</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Chocolate Chip Cookie</p><p class="price">2.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">3.50</p>
+          </article>
+        </section>
+      </main>
+
+      <hr class="bottom-line">
+
+      <!-- footer -->
+      <footer>
+        <p><a href="https://pgm369.github.io/portal/" target="_blank">Visit my website!</a></p>
+        <p class="address">Greater Seattle Area, WA</p>
+        <p>
+          <small>
+            &copy; 2021-<span id="this-year"></span> by Priscila Garcia-Mendoza, All Rights Reserved ~
+            <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+            <a id="css-checker" href="#" target="_blank">Check CSS</a>
+          </small>
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      // https://tinyurl.com/dynamic-html-checker
+      document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
+
+      document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+
+      // set current year in span with id of this-year
+      let d = new Date();
+      let thisYear = d.getFullYear();
+      document.getElementById("this-year").innerHTML = thisYear;
+    </script>
+  </body>
+</html>

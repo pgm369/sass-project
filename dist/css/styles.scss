@@ -1,0 +1,108 @@
+// imports partials folder
+@import 'variables';
+@import 'mixins';
+
+// main styles for body and its descendants
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/6b/8c/ed/6b8ced393917ac426de2798eb4a8e8b4.jpg);
+  font-family: sans-serif;
+  background-position: center center; // centers background image
+  padding: 20px;
+
+  // header 
+  h1 {
+    font-size: $header-font-size;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  // sub-header
+  h2 {
+    font-size: $sub-header-font-size;
+  }
+
+  // italics for certain elements
+  .established {
+    font-style: italic;
+  }
+
+  // center-align text for headers & paragraphs
+  h1, h2, p {
+    text-align: center;
+  }
+
+  // menu
+  .menu {
+    width: 80%;
+    background-color: $primary-bg-color;
+    margin: 0 auto; // centers horizontally
+    padding: 20px;
+    max-width: 500px;
+
+    // media queries to adjust styles based on different screen sizes
+    @media (max-width: 768px) {
+      width: 100%; // adjusts width for smaller screens
+    } 
+  }
+
+  // center-align images
+  img {
+    @include centerElement()
+  }
+
+  // horizontal rule 
+  hr {
+    height: 2px;
+    background-color: $hr-color;
+    border-color: $hr-color;
+  }
+
+  // additional margin for specific elements
+  .bottom-line {
+    margin-top: 25px;
+  }
+
+  // header fonts
+  h1, h2 {
+    font-family: Impact, serif;
+  }
+
+  // styles for paragraphs inside items
+  .item p {
+    display: inline-block;
+    margin-top: 5px 0;
+    font-size: 18px;
+  }
+
+  // specific styles for flavor and dessert items
+  .flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+
+  // prices
+  .price {
+    text-align: right;
+    width: 25%;
+  }
+
+  // footer
+  footer {
+    font-size: 14px;
+  }
+
+  // address
+  .address {
+    margin-bottom: 5px;
+  }
+
+  // link styles
+  a {
+    color: black;
+
+    // adjusts link color on hover and active states
+    &:hover, &:active {
+      color: $hr-color;
+    }
+  }
+}

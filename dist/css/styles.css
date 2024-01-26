@@ -1,0 +1,73 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/6b/8c/ed/6b8ced393917ac426de2798eb4a8e8b4.jpg);
+  font-family: sans-serif;
+  background-position: center center;
+  padding: 20px;
+}
+body h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+body h2 {
+  font-size: 30px;
+}
+body .established {
+  font-style: italic;
+}
+body h1, body h2, body p {
+  text-align: center;
+}
+body .menu {
+  width: 80%;
+  background-color: #ECECDB;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 500px;
+}
+@media (max-width: 768px) {
+  body .menu {
+    width: 100%;
+  }
+}
+body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body hr {
+  height: 2px;
+  background-color: #A7C389;
+  border-color: #A7C389;
+}
+body .bottom-line {
+  margin-top: 25px;
+}
+body h1, body h2 {
+  font-family: Impact, serif;
+}
+body .item p {
+  display: inline-block;
+  margin-top: 5px 0;
+  font-size: 18px;
+}
+body .flavor, body .dessert {
+  text-align: left;
+  width: 75%;
+}
+body .price {
+  text-align: right;
+  width: 25%;
+}
+body footer {
+  font-size: 14px;
+}
+body .address {
+  margin-bottom: 5px;
+}
+body a {
+  color: black;
+}
+body a:hover, body a:active {
+  color: #A7C389;
+}/*# sourceMappingURL=styles.css.map */
